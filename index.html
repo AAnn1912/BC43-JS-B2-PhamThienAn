@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>JS b2</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <!-- FontAwesome 6.2.0 CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- LAY-OUT -->
+    <div class="container">
+      <div class="board">
+        <div class="bam border">
+          <button id="touch1" class="page" onclick="touchBook()">
+            <img
+              id="close1"
+              src="./img/book (1).png"
+              alt=""
+              style="width: 18px"
+            />
+            <span>Bài 1</span>
+          </button>
+          <button id="touch2" class="page" onclick="touchBook2() ">
+            <img
+              id="close2"
+              src="./img/book (1).png"
+              alt=""
+              style="width: 18px"
+            />
+            <span>Bài 2</span>
+          </button>
+          <button id="touch3" class="page" onclick="touchBook3()">
+            <img
+              id="close3"
+              src="./img/book (1).png"
+              alt=""
+              style="width: 18px"
+            />
+            <span>Bài 3</span>
+          </button>
+          <button id="touch4" class="page" onclick="touchBook4()">
+            <img
+              id="close4"
+              src="./img/book (1).png"
+              alt=""
+              style="width: 18px"
+            />
+            <span>Bài 4</span>
+          </button>
+          <button id="touch5" class="page" onclick="touchBook5()">
+            <img
+              id="close5"
+              src="./img/book (1).png"
+              alt=""
+              style="width: 18px"
+            />
+            <span>Bài 5</span>
+          </button>
+        </div>
+        <div class="content border">
+          <!-- Bài 1 -->
+          <div class="one mt-5 d-none">
+            <!--d-none-->
+            <img
+              class="ms-5"
+              src="./img/salary.png"
+              alt=""
+              style="width: 25px; margin-bottom: 5px"
+            />
+            <span class="fs-4 fw-bold"> Tính tiền lương nhân viên</span>
+            <div class="text p-3 mt-5 ms-5 me-5">
+              <img
+                src="./img/lightbulb.png"
+                alt=""
+                style="width: 25px; margin-bottom: 8px"
+              />
+              Cách làm <br />
+              Công thức: Lương = Lương 1 ngày * số ngày làm <br />
+              Kiến thức áp dụng:
+              <br />
+              <br />
+              <ul>
+                <li>Tìm tới thẻ và lấy giá trị</li>
+                <li>Tạo hàm cơ bản</li>
+                <li>Gắn sự kiện click cho button</li>
+                <li>Thay đổi nội dung cho thẻ</li>
+                <li>Xử lý load trang với button của form</li>
+              </ul>
+            </div>
+
+            <!-- JS Bài 1 -->
+            <div class="card-body d-flex">
+              <input
+                id="luongMotNgay"
+                type="text"
+                class="form form-control mt-3 ms-5 text-center"
+                placeholder="Lương Một Ngày"
+                style="width: 25%"
+              />
+              <input
+                id="soNgayLam"
+                type="text"
+                class="form form-control mt-3 ms-5 text-center"
+                placeholder="Số Ngày Làm"
+                style="width: 25%"
+              />
+            </div>
+            <button class="btn bg-primary mt-3 ms-5" onclick="tinhTien()">
+              tính tiền
+            </button>
+            <div class="card-footer">
+              <div class="ketqua mt-4 ms-5 p-3" style="width: 90%">
+                <img
+                  class="ms-5"
+                  src="./img/accept.png"
+                  alt=""
+                  style="width: 22px"
+                />
+                <span id="tongluong"></span>
+              </div>
+            </div>
+          </div>
+          <!-- Bài 2 -->
+          <div class="two mt-5 d-none">
+            <img
+              class="ms-5"
+              src="./img/maths.png"
+              alt=""
+              style="width: 25px; margin-bottom: 5px"
+            />
+            <span class="fs-4 fw-bold"> Tính giá trị trung bình</span>
+            <div class="text p-3 mt-5 ms-5 me-5">
+              <img
+                src="./img/lightbulb.png"
+                alt=""
+                style="width: 25px; margin-bottom: 8px"
+              />
+              Cách làm <br />
+              Công thức: TBC = (st1 + st2 + st3 + st4 +st5) / 5 <br />
+              Kiến thức áp dụng:
+              <br />
+              <br />
+              <ul>
+                <li>Tìm tới thẻ và lấy giá trị</li>
+                <li>Tạo hàm cơ bản</li>
+                <li>Gắn sự kiện click cho button</li>
+                <li>Thay đổi nội dung cho thẻ</li>
+                <li>Xử lý load trang với button của form</li>
+              </ul>
+            </div>
+
+            <!-- JS Bài 2 -->
+            <div class="card-body d-flex">
+              <input
+                id="soT1"
+                type="text"
+                class="form form-control mt-3 ms-5 text-center"
+                placeholder="số thực 1"
+                style="width: 20%"
+              />
+              <input
+                id="soT2"
+                type="text"
+                class="form form-control mt-3 ms-5 text-center"
+                placeholder="số thực 2"
+                style="width: 20%"
+              />
+              <input
+                id="soT3"
+                type="text"
+                class="form form-control mt-3 ms-5 text-center"
+                placeholder="số thực 3"
+                style="width: 20%"
+              />
+              <input
+                id="soT4"
+                type="text"
+                class="form form-control mt-3 ms-5 text-center"
+                placeholder="số thực 4"
+                style="width: 20%"
+              />
+              <input
+                id="soT5"
+                type="text"
+                class="form form-control mt-3 ms-5 me-5 text-center"
+                placeholder="số thực 5"
+                style="width: 20%"
+              />
+            </div>
+            <button class="btn bg-primary mt-3 ms-5" onclick="ketQua()">
+              Kết Quả
+            </button>
+            <div class="card-footer">
+              <div class="ketqua mt-4 ms-5 p-3" style="width: 90%">
+                <img
+                  class="ms-5"
+                  src="./img/accept.png"
+                  alt=""
+                  style="width: 22px"
+                />
+                <span id="ketqua"></span>
+              </div>
+            </div>
+          </div>
+          <!-- Bài 3 -->
+          <div class="three mt-5 d-none">
+            <img
+              class="ms-5"
+              src="./img/exchange.png"
+              alt=""
+              style="width: 25px; margin-bottom: 5px"
+            />
+            <span class="fs-4 fw-bold"> Quy đổi tiền</span>
+            <div class="text p-3 mt-5 ms-5 me-5">
+              <img
+                src="./img/lightbulb.png"
+                alt=""
+                style="width: 25px; margin-bottom: 8px"
+              />
+              Cách làm <br />
+              Công thức: VNĐ = USD * tỉ lệ quy đổi <br />
+              Kiến thức áp dụng:
+              <br />
+              <br />
+              <ul>
+                <li>Tìm tới thẻ và lấy giá trị</li>
+                <li>Tạo hàm cơ bản</li>
+                <li>Gắn sự kiện click cho button</li>
+                <li>Thay đổi nội dung cho thẻ</li>
+                <li>Xử lý load trang với button của form</li>
+              </ul>
+            </div>
+
+            <!-- JS Bài 3 -->
+            <div class="card-body d-flex">
+              <input
+                id="USD"
+                type="text"
+                class="form form-control mt-3 ms-5 text-center"
+                placeholder="Tổng tiền USD cần đổi"
+                style="width: 25%"
+              />
+              <input
+                id="tiLe"
+                type="text"
+                class="form form-control mt-3 ms-5 text-center"
+                placeholder="Tỉ Lệ Đổi"
+                style="width: 25%"
+              />
+            </div>
+            <button class="btn bg-primary mt-3 ms-5" onclick="doiTien()">
+              Đổi tiền
+            </button>
+            <div class="card-footer">
+              <div class="ketqua mt-4 ms-5 p-3" style="width: 90%">
+                <img
+                  class="ms-5"
+                  src="./img/accept.png"
+                  alt=""
+                  style="width: 22px"
+                />
+                <span id="tongTien"></span>
+              </div>
+            </div>
+          </div>
+          <!-- Bài 4 -->
+          <div class="three mt-5 d-none">
+            <img
+              class="ms-5"
+              src="./img/ruler.png"
+              alt=""
+              style="width: 25px; margin-bottom: 5px"
+            />
+            <span class="fs-4 fw-bold">
+              Tính diện tích, chu vi Hình Chữ Nhật</span
+            >
+            <div class="text p-3 mt-5 ms-5 me-5">
+              <img
+                src="./img/lightbulb.png"
+                alt=""
+                style="width: 25px; margin-bottom: 8px"
+              />
+              Cách làm <br />
+              Công thức: <br />
+              ♦ Chu Vi = (Chiều Dài + Chiều Rộng)*2 <br />
+              ♦ Diện Tích = Chiều Dài * Chiều Rộng <br />
+              Kiến thức áp dụng:
+              <br />
+              <br />
+              <ul>
+                <li>Tìm tới thẻ và lấy giá trị</li>
+                <li>Tạo hàm cơ bản</li>
+                <li>Gắn sự kiện click cho button</li>
+                <li>Thay đổi nội dung cho thẻ</li>
+                <li>Xử lý load trang với button của form</li>
+              </ul>
+            </div>
+
+            <!-- JS Bài 4 -->
+            <div class="card-body d-flex">
+              <input
+                id="chieuDai"
+                type="text"
+                class="form form-control mt-3 ms-5 text-center"
+                placeholder="Chiều Dài"
+                style="width: 25%"
+              />
+              <input
+                id="chieuRong"
+                type="text"
+                class="form form-control mt-3 ms-5 text-center"
+                placeholder="Chiều Rộng"
+                style="width: 25%"
+              />
+            </div>
+            <button class="btn bg-primary mt-3 ms-5" onclick="dapAn()">
+              Đáp Án
+            </button>
+            <div class="card-footer">
+              <div class="ketqua mt-4 ms-5 p-3" style="width: 90%">
+                <img
+                  class="ms-5"
+                  src="./img/accept.png"
+                  alt=""
+                  style="width: 22px"
+                />
+                <span id="dapAnDt"></span>
+                <span id="dapAnCv"></span>
+              </div>
+            </div>
+          </div>
+          <!-- Bài 5 -->
+          <div class="three mt-5">
+            <img
+              class="ms-5"
+              src="./img/calculator.png"
+              alt=""
+              style="width: 25px; margin-bottom: 5px"
+            />
+            <span class="fs-4 fw-bold"> Quy đổi tiền</span>
+            <div class="text p-3 mt-5 ms-5 me-5">
+              <img
+                src="./img/lightbulb.png"
+                alt=""
+                style="width: 25px; margin-bottom: 8px"
+              />
+              Cách làm <br />
+              Công thức: Tổng ký số = + số hàng chục + sống hàng trăm +...
+              <br />
+              Kiến thức áp dụng:
+              <br />
+              <br />
+              <ul>
+                <li>Tìm tới thẻ và lấy giá trị</li>
+                <li>Tạo hàm cơ bản</li>
+                <li>Gắn sự kiện click cho button</li>
+                <li>Thay đổi nội dung cho thẻ</li>
+                <li>Xử lý load trang với button của form</li>
+              </ul>
+            </div>
+
+            <!-- JS Bài 5 -->
+            <div class="card-body">
+              <input
+                id="kySo"
+                type="text"
+                class="form form-control mt-3 ms-5 text-center"
+                placeholder="Nhập số có 2 chữ số"
+                style="width: 25%"
+              />
+            </div>
+            <button class="btn bg-primary mt-3 ms-5" onclick="tinhTongKy()">
+              Tính tổng ký số
+            </button>
+            <div class="card-footer">
+              <div class="ketqua mt-4 ms-5 p-3" style="width: 90%">
+                <img
+                  class="ms-5"
+                  src="./img/accept.png"
+                  alt=""
+                  style="width: 22px"
+                />
+                <span id="tongKySo"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+      integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
