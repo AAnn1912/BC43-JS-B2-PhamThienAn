@@ -33,27 +33,27 @@
     padding-bottom: 30%;
 }
 
-.one .text {
+.one-c .text {
     border-left: 5px solid aqua;
     box-shadow: 3px 0px 10px 2px grey;
 }
 
-.two .text {
+.two-c .text {
     border-left: 5px solid aqua;
     box-shadow: 3px 0px 10px 2px grey;
 }
 
-.three .text {
+.three-c .text {
     border-left: 5px solid aqua;
     box-shadow: 3px 0px 10px 2px grey;
 }
 
-.four .text {
+.four-c .text {
     border-left: 5px solid aqua;
     box-shadow: 3px 0px 10px 2px grey;
 }
 
-.five .text {
+.five-c .text {
     border-left: 5px solid aqua;
     box-shadow: 3px 0px 10px 2px grey;
 }
@@ -81,25 +81,14 @@
     box-shadow: 1px -1px 5px 1px;
 }
 
-/* .one {
-    position: relative;
+.hide {
+    display: none;
 }
 
-.two {
-    position: absolute;
+.appear {
+    display: block;
+    margin-top: 3rem;
 }
-
-.three {
-    position: absolute;
-}
-
-.four {
-    position: absolute;
-}
-
-.five {
-    position: absolute;
-} */
 
 .ketqua {
     background-color: #d1e7dd;

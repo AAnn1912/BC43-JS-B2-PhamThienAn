@@ -10,17 +10,43 @@ var touch2 = document.getElementById("touch2");
 var touch3 = document.getElementById("touch3");
 var touch4 = document.getElementById("touch4");
 var touch5 = document.getElementById("touch5");
+var oneAppear = document.getElementById("one");
+var twoAppear = document.getElementById("two");
+var threeAppear = document.getElementById("three");
+var fourAppear = document.getElementById("four");
+var fiveAppear = document.getElementById("five");
+oPen1.src = "./img/book (2).png";
+oPen2.src = "./img/book (1).png";
+oPen3.src = "./img/book (1).png";
+oPen4.src = "./img/book (1).png";
+oPen5.src = "./img/book (1).png";
+touch1.className = "page-before"; //one
+touch2.className = "page";
+touch3.className = "page";
+touch4.className = "page";
+touch5.className = "page";
+oneAppear.className = "one-c text appear";
+twoAppear.className = "hide";
+threeAppear.className = "hide";
+fourAppear.className = "hide";
+fiveAppear.className = "hide";
+
 function touchBook() {
   oPen1.src = "./img/book (2).png";
   oPen2.src = "./img/book (1).png";
   oPen3.src = "./img/book (1).png";
   oPen4.src = "./img/book (1).png";
   oPen5.src = "./img/book (1).png";
-  touch1.className = "page-before one"; //one
+  touch1.className = "page-before"; //one
   touch2.className = "page";
   touch3.className = "page";
   touch4.className = "page";
   touch5.className = "page";
+  oneAppear.className = "one-c text appear";
+  twoAppear.className = "hide";
+  threeAppear.className = "hide";
+  fourAppear.className = "hide";
+  fiveAppear.className = "hide";
 }
 
 function touchBook2() {
@@ -30,10 +56,15 @@ function touchBook2() {
   oPen4.src = "./img/book (1).png";
   oPen5.src = "./img/book (1).png";
   touch1.className = "page";
-  touch2.className = "page-before two"; //two
+  touch2.className = "page-before "; //two
   touch3.className = "page";
   touch4.className = "page";
   touch5.className = "page";
+  oneAppear.className = "hide";
+  twoAppear.className = "two-c text appear";
+  threeAppear.className = "hide";
+  fourAppear.className = "hide";
+  fiveAppear.className = "hide";
 }
 
 function touchBook3() {
@@ -47,6 +78,11 @@ function touchBook3() {
   touch3.className = "page-before"; //three
   touch4.className = "page";
   touch5.className = "page";
+  oneAppear.className = "hide";
+  twoAppear.className = "hide";
+  threeAppear.className = "three-c text appear";
+  fourAppear.className = "hide";
+  fiveAppear.className = "hide";
 }
 
 function touchBook4() {
@@ -60,6 +96,11 @@ function touchBook4() {
   touch3.className = "page";
   touch4.className = "page-before"; //four
   touch5.className = "page";
+  oneAppear.className = "hide";
+  twoAppear.className = "hide";
+  threeAppear.className = "hide";
+  fourAppear.className = "three-c text appear";
+  fiveAppear.className = "hide";
 }
 
 function touchBook5() {
@@ -73,6 +114,11 @@ function touchBook5() {
   touch3.className = "page";
   touch4.className = "page";
   touch5.className = "page-before"; //five
+  oneAppear.className = "hide";
+  twoAppear.className = "hide";
+  threeAppear.className = "hide";
+  fourAppear.className = "hide";
+  fiveAppear.className = "five-c text appear";
 }
 
 // Bài 1: tính tiền lương nhân viên
