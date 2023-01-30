@@ -93,3 +93,18 @@
 .ketqua {
     background-color: #d1e7dd;
 }
+
+.body .page {
+    animation: opacity 0.5;
+}
+
+
+@keyframes opacity {
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
