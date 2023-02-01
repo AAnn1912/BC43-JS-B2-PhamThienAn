@@ -23,6 +23,11 @@
     box-shadow: 1px -1px 5px 1px;
 }
 
+.fade1 {
+    animation: chop 0.5s;
+
+}
+
 .content {
     background-image: url(./img/bg1.png);
     background-size: cover;
@@ -31,6 +36,7 @@
     margin-top: 50px;
     margin-bottom: 120px;
     padding-bottom: 30%;
+    transition: all 0.5s;
 }
 
 .one-c .text {
@@ -94,15 +100,16 @@
     background-color: #d1e7dd;
 }
 
-.body .page {
-    animation: opacity 0.5;
-}
 
+@keyframes chop {
 
-@keyframes opacity {
-    50% {
-        opacity: 0.5;
+    0% {
+        opacity: 0;
     }
+
+    /* 50% {
+        opacity: 0.5;
+    } */
 
     100% {
         opacity: 1;

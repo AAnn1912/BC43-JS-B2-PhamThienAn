@@ -47,6 +47,9 @@ function touchBook() {
   threeAppear.className = "hide";
   fourAppear.className = "hide";
   fiveAppear.className = "hide";
+
+  oneAppear.className = "one-c text appear";
+  oneAppear.className = "one-c text appear fade1";
 }
 
 function touchBook2() {
@@ -65,6 +68,8 @@ function touchBook2() {
   threeAppear.className = "hide";
   fourAppear.className = "hide";
   fiveAppear.className = "hide";
+  twoAppear.className = "two-c text appear";
+  twoAppear.className = "two-c text appear fade1";
 }
 
 function touchBook3() {
@@ -83,6 +88,8 @@ function touchBook3() {
   threeAppear.className = "three-c text appear";
   fourAppear.className = "hide";
   fiveAppear.className = "hide";
+  threeAppear.className = "three-c text appear";
+  threeAppear.className = "three-c text appear fade1";
 }
 
 function touchBook4() {
@@ -101,6 +108,8 @@ function touchBook4() {
   threeAppear.className = "hide";
   fourAppear.className = "three-c text appear";
   fiveAppear.className = "hide";
+  fourAppear.className = "four-c text appear";
+  fourAppear.className = "four-c text appear fade1";
 }
 
 function touchBook5() {
@@ -119,6 +128,9 @@ function touchBook5() {
   threeAppear.className = "hide";
   fourAppear.className = "hide";
   fiveAppear.className = "five-c text appear";
+
+  fiveAppear.className = "five-c text appear";
+  fiveAppear.className = "five-c text appear fade1";
 }
 
 // Bài 1: tính tiền lương nhân viên
